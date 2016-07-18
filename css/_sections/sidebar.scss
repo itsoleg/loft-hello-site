@@ -1,0 +1,79 @@
+.sidebar {
+  width: 220px;
+  float: left;
+  text-align: right;
+
+  @include laptop {
+    width: 200px;
+  }
+
+  @include tablet {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.nav_list {
+  font-size: rem(18px);
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 36px;
+
+  @include tablet {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  @include phone {
+    margin-bottom: 0;
+  }
+}
+
+.nav__item {
+  margin-bottom: 20px;
+
+  @include tablet {
+    display: inline-block;
+  }
+}
+
+.nav__item_desc {
+  margin-left: 5px;
+}
+
+.nav__item_active .nav__link {
+  color: #33c1e3;
+  border-right: 5px solid #4db2ce;
+  padding-right: 24px;
+  font-weight: 700;
+
+  @include phone {
+    border-right: 0 none;
+    padding-right: 5px;
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #414141;
+  padding: 13px 29px 13px 0;
+
+  @include tablet {
+    padding: 13px 20px 13px 0;
+  }
+
+  @include phone {
+    padding: 0 10px 0 0;
+  }
+}
+
+.nav__link i {
+  @include phone {
+    display: none;
+  }
+}
+
+.nav__link:hover {
+  color: #33c1e3;
+  transition: all ease 0.3s;
+}

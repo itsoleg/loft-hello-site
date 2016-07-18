@@ -1,0 +1,174 @@
+.career__left {
+  margin-left: 20px;
+  margin-top: 10px;
+  float: left;
+
+  @include tablet {
+    margin-left: 0;
+    width:32%;
+  }
+
+  @include phone {
+    float: none;
+    width: auto;
+  }
+}
+
+.career__pic {
+  border-radius: 10px;
+
+  @include laptop {
+    width: 160px;
+  }
+
+  @include tablet {
+    width: 100%;
+  }
+
+  @include phone {
+    width: 220px;
+    display: block;
+    margin: 0 auto;
+  }
+
+
+}
+
+.career__right {
+  float: right;
+  margin-top: 10px;
+
+  @include tablet {
+    width: 50%;
+  }
+  
+  @include phone {
+    float: none;
+    width: 100%;
+  }
+}
+
+.carrer__right_item {
+  margin-bottom: 20px;
+  text-align: right;
+
+  &:first-child {
+    .career__right_item_wrap {
+      &:before {
+        display: none;
+      }
+    }
+
+  }
+
+  &:last-child {
+    .career__right_item_wrap {
+      &:after {
+        display: none;
+      }
+    }
+
+  }
+}
+
+.career__right_item_wrap {
+  padding: 14px 20px;
+  width: 380px;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+
+  &:before, &:after {
+    content: "";
+    display: block;
+    width: 1px;
+    background: #dddddd;
+    position: absolute;
+    left: -20px;
+
+  }
+
+  &:before {
+    top: 0;
+    bottom: 50%;
+    margin-bottom: 10px;
+  }
+
+  &:after {
+    top: 50%;
+    bottom: -22px;
+    margin-top: 10px;
+  }
+
+  @include laptop {
+    width: 300px;
+  }
+
+  @include tablet {
+    width: 100%;
+  }
+
+  @include phone {
+    width: 100%;
+  }
+
+}
+
+.carrer__right_item_name {
+  color: #5a5a5a;
+  font-size: rem(21px);
+  font-weight: 400;
+}
+
+.carrer__right_item_posttime {
+  color: #727272;
+  font-size: rem(18px);
+  font-weight: 300;
+}
+
+.career__right_item_year {
+  position: absolute;
+  right: 100%;
+  margin-right: 35px;
+  top: 50%;
+  line-height: 30px;
+  margin-top: -15px;
+  color: #727272;
+
+  &:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #33C1E3;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: -20px;
+  }
+}
+
+.career__right_item_hover:hover .career__right_item_wrap {
+  background-color: #33C1E3;
+}
+
+.career__right_item_hover:hover .carrer__right_item_name {
+  color: #fff;
+}
+
+.career__right_item_hover:hover .carrer__right_item_posttime {
+  color: #fff;
+}
+
+.career__right_item_hover:hover {
+  .career__right_item_year:after {
+    border: 5px solid #94E0F2;
+    border-radius: 50%;
+    margin-top: -10px;
+    right: -25px;
+  }
+}

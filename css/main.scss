@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "FiraSans";
+  src: url(../fonts/FiraSans-Regular.ttf);
+}
+
+
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url(../fonts/fontawesome-webfont.ttf);
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrapper, .footer {
+  font-family: "FiraSans";
+
+}
+
+.wrapper {
+  background-color: #F6F6F6;
+}
+
+
+
+
+//vars
+
+
+// layout
+@import "_misc/mixins";
+@import "_misc/fonts";
+@import "_misc/adjustment";
+@import "_misc/normalize";
+
+
+//styles
+@import "_sections/header";
+@import "_sections/footer";
+@import "_sections/sidebar";
+@import "_sections/about";
+@import "_sections/career";
+@import "_sections/portfolio";
+@import "_sections/hello";
+
+//media
+@import "adaptive/media";
+
+
+.page_content {
+  width: 720px;
+  float: right;
+
+  @include laptop {
+    width: 550px;
+  }
+
+  @include tablet {
+    width: auto;
+    float: none;
+  }
+}

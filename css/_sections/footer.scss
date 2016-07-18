@@ -1,0 +1,99 @@
+.footer {
+  background-color: #414141;
+
+  @include tablet {
+    min-width: auto;
+  }
+
+  @include phone {
+    height: 115px;
+  }
+}
+
+.container {
+  vertical-align: middle;
+}
+
+.footer__left {
+  float: left;
+  
+  @include phone {
+    float: none;
+  }
+}
+
+.copyright {
+  display: inline-block;
+  
+  @include phone {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+.copyright_info {
+  color: #9c9c9c;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 50px;
+
+  @include phone {
+    line-height: 24px;
+  }
+}
+
+.footer__right {
+  float: right;
+  
+  @include phone {
+    float: none;
+    text-align: center;
+  }
+}
+
+.socials {
+  /*line-height: 50px;*/
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50px;
+
+  @include phone {
+    line-height: 18px;
+  }
+
+}
+
+.social__link {
+  color: #fff;
+  background-color: #9c9c9c;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  border-radius: 15px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 5px;
+  line-height: 28px;
+}
+
+.social_icon {
+  vertical-align: middle;
+}
+
+.social__link_fb:hover {
+  background-color: #4463A6;
+  transition: all ease 0.3s;
+}
+
+.social__link_vk:hover {
+  background-color: #5D99C3;
+  transition: all ease 0.3s;
+}
+
+.social__link_tw:hover {
+  background-color: #6AC4D9;
+  transition: all ease 0.3s;
+}

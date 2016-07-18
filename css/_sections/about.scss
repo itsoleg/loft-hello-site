@@ -1,0 +1,123 @@
+.about__left {
+  float: left;
+  width: 340px;
+
+  @include laptop {
+    width: 200px;
+  }
+
+  @include tablet {
+    width: 28%;
+  }
+
+  @include phone {
+    width: 100%;
+  }
+}
+
+.about__pic {
+  width: 230px;
+  margin: 25px auto;
+
+  @include laptop {
+    width: 150px;
+  }
+
+  @include phone {
+    width: 140px;
+    margin: 0 auto;
+  }
+
+}
+
+.about__pic_large {
+  border-radius: 115px;
+  border: 5px solid #fff;
+
+  @include laptop {
+    width: 150px;
+  }
+
+  @include tablet {
+    width: 175px;
+  }
+
+  @include phone {
+    width: 140px;
+  }
+}
+
+.about__right {
+  float: right;
+  width: 380px;
+
+  @include laptop {
+    width: 350px;
+  }
+
+  @include tablet {
+    width: 60%;
+  }
+
+  @include phone {
+    width: 100%;
+  }
+}
+
+.title-span {
+  color: #414141;
+  font-size: rem(35px);
+  font-weight: 600;
+  padding: 20px 0 10px 0;
+  display: block;
+
+  @include phone {
+    padding: 10px 0 10px 0;
+  }
+}
+
+.about__description {
+  height: 290px;
+  overflow: auto;
+  font-size: rem(18px);
+  font-weight: 300;
+  line-height: 26px;
+  color: #646464;
+  
+  @include phone {
+    overflow: visible;
+    height: auto;
+  }
+}
+
+.about_btns {
+  text-align: center;
+  float: right;
+  margin-top: 48px;
+}
+
+.about_btns_text {
+  margin-left: 3px;
+}
+
+.btn {
+  width: 173px;
+  border: 2px solid #e85f61;
+  background-color: #F6F6F6;
+  color: #e85f61;
+  border-radius: 50px;
+  outline: none;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 28px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+
+.btn:hover {
+  background-color: #e85f61;
+  color: #F6F6F6;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
